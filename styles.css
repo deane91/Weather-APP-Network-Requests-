@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-box {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .button {
+    padding: 10px;
+    background: #2575fc;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #6a11cb;
+  }
+  
+  .weather-info {
+    display: none; /* Initially hidden */
+  }
+  
+  .city-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .temperature, .description, .humidity {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.5em;
+    }
+    
+    .input, .button {
+      padding: 8px;
+    }
+  }
+  
